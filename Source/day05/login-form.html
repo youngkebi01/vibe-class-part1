@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            border: 2px solid black;
+        }
+        .login-form {
+            width: auto;
+            height: auto;
+            border: 2px solid black;
+        }
+
+        .item1 {
+            width: 80px;
+            height: 80px;
+            background: orange;
+            border-radius: 5px;
+        }
+
+        .item2 {
+            width: 40;
+            height: 40px;
+            background: blue;    
+        }
+        .form {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+        } 
+
+        .title {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <div class="form">
+                <form >
+                    <span class="title"><h2>로그인</h2></span>
+                    <div>
+                        <input class="title" type="text" placeholder="아이디 입력">
+                    </div>
+                    <div>
+                        <input class="title" type="password" placeholder="비밀번호 입력">
+                    </div>
+                    <div>
+                        <button class="title" type="submit">로그인</button>
+                    </div>
+                </form>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
