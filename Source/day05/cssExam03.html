@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        div {
+             border: 1px solid red;
+        }
+        .outline {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        /* .child 클래스의 width를 50vw로 설정하여 뷰포트 너비의 50%를 차지하도록 하고, 
+        height를 100vh로 설정하여 뷰포트 높이의 100%를 차지하도록 합니다. */
+        .child {
+            width: 50vw;
+            height: 100vh;
+
+        }
+    </style>
+
+
+
+</head>
+<body>
+    
+    <div class="outline"> 
+        <div class="child"> 자식 </div>   
+    </div>
+    <!-- height영역이 100%라서 크지지 않는다 -->
+   
+
+
+</body>
+</html>
