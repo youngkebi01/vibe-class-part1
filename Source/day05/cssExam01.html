@@ -4,8 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+<!--
+  Css 를 사용 방법 3가지
+  1 <style> ... </s
+  2 html tagㅇ 직접
+  3 css 파일로 분리해서 사용
+  
+--> 
+<style>
+  /* css는 선택자를 이용해서 html 요소를 선택해서 스타일을 적용하는 언어입니다. */
+    /* 선택자 종류
+        html tag  (html 태그 전체 적용)
+        tag id    (id는 html 요소에 하나만 적용할 수 있는 고유한 이름입니다.) id는 #으로 선택합니다.
+        classname (class는 html 요소에 여러 개 적용할 수 있는 이름입니다.) class는 .으로 선택합니다.
+         *        (전체 선택자, 모든 요소를 선택합니다.)
+         부모 > 자식 (부모 요소의 직계 자식 요소를 선택합니다.)
+         부모 자식 (부모 요소의 모든 자식 요소를 선택합니다.)
+         그룹 선택자 (여러 요소를 한 번에 선택할 때 사용합니다.)
+          
     
+        1. 태그 선택자 : 태그 이름을 이용해서 선택하는 방법
+        2. 클래스 선택자 : .클래스 이름을 이용해서 선택하는 방법
+        3. 아이디 선택자 : #아이디 이름을 이용해서 선택하는 방법
+        4. 전체 선택자 : *를 이용해서 모든 요소를 선택하는 방법
+        5. 자식 선택자 : 부모 > 자식 형태로 선택하는 방법
+        6. 후손 선택자 : 부모 자식 형태로 선택하는 방법
+        7. 그룹 선택자 : ,를 이용해서 여러 요소를 한 번에 선택하는 방법
+    */
+    div {
+        width: 500px;
+        height: 200px;
+        background: blue;
+        border: 1px solid red;
+    } 
+    /* tag id      
+    #div2 {
+        width: 500px;
+        height: 200px;
+        background: white;
+        border: 1px solid red;
+    }     
+    
+    /* 클래스 선택자 : .pink 클래스를 가진 요소를 선택하는 방법 */
+    .pink {
+        width: 500px;
+        height: 200px;
+        background: pink;
+        border: 1px solid red;
+    }
+/* 태그 선택자 : input 태그를 선택하는 방법 */
+    input [name="userId"] {
+        width: 200px;
+        height: 30px;
+        background: yellow;
+        border: 1px solid red;
+    }
+</style>
+</head>
+
+<body>   /* div{div$}*5  */
+    <div>div1</div>
+    <div id="div2">div2</div>
+    <div>div3</div>
+    <div class="pink">div4</div>
+    <div class="pink">div5</div>
+    <div >
+        <input type="text" name="userId" placeholder="이름 입력">
+        <input type="text" name="userId" placeholder="비밀번호 입력">
+    </div>>  
 </body>
 </html>
