@@ -42,36 +42,25 @@
             color: white;
          }
     </style>
-</head>
-<body>
-    <div class="container">
+</head><body>
+    <div class="caontainer">
         <div class="login-form">
             <div class="form">
-                <form >
-                    <span class="title"><h2>로그인</h2></span>
-                    <div>
-                        <input  id="userid" type="text" placeholder="아이디 입력">
-                    </div>
-                    <div>
-                        <input  id="password" type="password" placeholder="비밀번호 입력">
-                    </div>
-                    <div>
-                        <button type="button"  class="loginBtn" onclick="login();">로그인</button>
+                <form>
+                   <span class="title"><h2>로그인</h2></span>
+                   <div>
+                      <input type="text"  id="userId" placeholder="ID 입력 ">
                    </div>
-                    <div>
-                        <button type="button"  class="loginBtn" onclick="login();">로그인</button>
+                   <div>
+                      <input type="password"  id="passwd"  placeholder="PASSWORD 입력 ">
+                   </div>
+                   <div>
+                    <button type="button"  class="loginBtn" onclick="login();">로그인</button>
                    </div>
                 </form>
             </div>
         </div>
     </div>
-
-
-
-
-    
-
-
     <script>
 
         function login() {
@@ -98,5 +87,5 @@
         }
 
     </script>
-    </body>
+</body>
 </html>
