@@ -61,17 +61,45 @@
                 <form >
                     <span class="title"><h2>로그인</h2></span>
                     <div>
-                        <input class="title" type="text" placeholder="아이디 입력">
+                        <input class="title" id="userid" type="text" placeholder="아이디 입력">
                     </div>
                     <div>
-                        <input class="title" type="password" placeholder="비밀번호 입력">
+                        <input class="title" id="password" type="password" placeholder="비밀번호 입력">
                     </div>
                     <div>
-                        <button class="loginBtn" type="button">로그인</button>
+                        <button type="button" class="loginBtn" onclick="login();">"로그인"</button>
                     </div>
                 </form>
             </div>
         </div>    
     </div>
+    <script>
+
+        function login() {
+            // html 값을 -> 자바스크립트로 가져올 수 있음
+            // 자바스크립트의 결과 값 -> html 영역에 적용 가능 
+
+            //html 영역을  자바스크립트에서는 docuemnt 라는 객체를 사용 
+            const userId = document.getElementById('userId');
+            const passwd = document.getElementById('passwd');
+
+            if(userId.value.trim().length === 0) {
+                alert('아이디를 입력하십시오.');
+                //함수끝내기
+                return;
+            }
+
+
+             if(passwd.value.trim().length === 0) {
+                alert('패스워드를 입력하십시오.');
+                //함수끝내기
+                return;
+            }
+
+            alert('로그인 되었습니다.');
+
+        }
+
+    </script>
 </body>
 </html>
