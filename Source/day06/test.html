@@ -5,63 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        body{
-            padding: 0;
-            margin: 0;
-        }
          .container{
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 100px;
+            background-color: red;
          }
 
-         .login-form{
+        div {
+             border: 1px solid red;
+        }
+        .outline {
             width: 400px;
-            height: 350px;
-            border: 1px solid black;
-            border-radius: 5px;
-         }
+            height: 100px;
+            background: blue;
+        }
 
-         .form{
+        /* .child 클래스의 width를 50vw로 설정하여 뷰포트 너비의 50%를 차지하도록 하고, 
+        height를 100vh로 설정하여 뷰포트 높이의 100%를 차지하도록 합니다. */
+        .child {
+            width: 60%;
+            height: 90%;
+            background: yellow;
+        }
+
+        .lastchild {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-         }
+            width: 500px;
+            height: 100px;
+            background: cyan;
+        }
+  
+    </style>    
 
-         .title{
-            text-align: center;
-         }
-
-         .loginBtn{
-            width: 100%;
-            background-color: #0f3eca;
-            border-radius: 10px;
-            color: white;
-         }
-    </style>
 </head>
 <body>
+    <h1>쇼핑몰</h1>
+
+    <h2>전자제품</h2>
+    <p>노트북, 모니터</p>
+
+    <h2>의류</h2>
+    <p>셔츠, 바지</p>
+
+    <h3>fuck 의류</h3>
+    <p>셔츠, 바지 <span style="color:red;"> SPAN 글자 </span></p>
+
     <div class="container">
-        <div class="login-form">
-            <div class="form">
-                <form>
-                   <span class="title"><h2>로그인</h2></span>
-                   <div>
-                      <input type="text"  id="userId" placeholder="ID 입력 ">
-                   </div>
-                   <div>
-                      <input type="password"  id="passwd"  placeholder="PASSWORD 입력 ">
-                   </div>
-                   <div>
+        <input type="text"  id="userId" placeholder="ID 입력 ">
+        <div class="outline"> 
+            <div class="child"> 
+                <div class="child"> 
+                    <h3>비번 입력 받기</h3>
+                    <input type="text"  id="password" placeholder="비번 입력 ">
                     <button type="button"  class="loginBtn" onclick="login();">로그인</button>
                    </div>
-                </form>
+                </div> 
             </div>
         </div>
     </div>
+    <div class="lastchild"> 
+        <h3>last child</h3>
+    </div> 
 
     <script>
 
@@ -89,6 +98,5 @@
         }
 
     </script>
-
 </body>
 </html>
