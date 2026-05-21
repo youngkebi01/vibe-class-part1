@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button type="button" onclick="getValue();">랜덤 출력</button>
+    </div>
+
+    <p id="result"></p>   /* 글자를 여기다 뿌려라, 즉 답을 여기다 display 한다 */ 
+
+    <script>
+
+        function getValue() {
+            const randVal = Math.floor(Math.random() * 20) + 1;
+            const pTag = document.querySelector('#result');
+            if(randVal >= 18) {
+                pTag.textContent = randVal + " : 성인";
+            } else if(randVal >= 13) {
+                pTag.textContent = randVal + " : 청소년";
+           } else {
+               pTag.textContent = randVal + " : 어린이";
+           }
+        }
+    </script>
+
+</body>
+</html>

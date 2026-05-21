@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+
+        function for_test() {
+            // html 값을 -> 자바스크립트로 가져올 수 있음
+            // 자바스크립트의 결과 값 -> html 영역에 적용 가능 
+            //html 영역을  자바스크립트에서는 docuemnt 라는 객체를 사용 
+            const userId = document.getElementById('userId');
+            const passwd = document.getElementById('passwd');
+
+            if(userId.value.trim().length === 0) {
+                alert('아이디를 입력하십시오.');
+                //함수끝내기
+                return;
+            }
+
+             if(passwd.value.trim().length === 0) {
+                alert('패스워드를 입력하십시오.');
+                //함수끝내기
+                return;
+            }
+
+            alert('로그인 되었습니다.');
+
+        }
+
+    </script>
+</body>
+</html>
