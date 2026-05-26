@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(start chrome *)"
+      "Bash(start chrome *)",
+      "Bash(Start-Process *)",
+      "PowerShell(Start-Process \"chrome.exe\" \"https://search.naver.com/search.naver?q=내일+서울+날씨\")",
+      "PowerShell(Start-Process \"chrome\" \"https://search.naver.com/search.naver?q=내일+서울+날씨\")"
     ]
   }
 }
