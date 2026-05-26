@@ -1,2 +1,10 @@
 bin/
 .claude/
+target/
+build/
+
+.project
+.classpath
+.settings/  
+
+.env
