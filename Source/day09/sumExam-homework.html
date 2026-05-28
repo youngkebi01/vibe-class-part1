@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>합 구하기</title>
+</head>
+<body>
+
+    <input type="number" id="from" placeholder="시작 숫자">
+    <input type="number" id="to" placeholder="끝 숫자">
+    <button onclick="getSum()">합 구하기</button>
+
+    <p>
+        결과 : <span id="result"></span>
+    </p>
+
+<script>
+
+    function getSum() {
+
+        const from = Number(document.getElementById("from").value);
+        const to = Number(document.getElementById("to").value);
+
+        if(from === 0 || to === 0) {
+            document.getElementById("result").textContent = "숫자를 입력하세요";
+            return;
+        }
+
+        let sum = 0;
+        let text = "";
+
+        for(let i = from; i <= to; i++) {
+
+            sum += i;
+
+            text += i;
+
+            if(i < to) {
+                text += " + ";
+            }
+        }
+
+        text += " = " + sum;
+
+        document.getElementById("result").textContent = text;
+    }
+
+</script>
+
+</body>
+</html>

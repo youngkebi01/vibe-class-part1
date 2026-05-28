@@ -21,6 +21,8 @@
         }
 
         // map() 함수 사용
+        // map 함수는  매개변수로   (값, index,  배열자신)  을 매개변수로 가지는  callback 함수를 받습니다.
+        // 해당 callback 함수는 반드시  return 이 있는 형태여야 합니다.
         const newArray = map(function(item) {
             return item * 2;
         });
@@ -28,6 +30,7 @@
         const arr = [1,2,3,10, 11, 16, 20, 22, 40];
 
         // filter() 함수 사용 - 짝수만 출력
+        // filter는 callback 함수 결과가 true 이면 해당 값을 포함하고,  false 이면 해당 값을 제외합니다. 
         const even = arr.filter(( val, index)=> val % 2 == 0 );
 
         // 결과 출력
