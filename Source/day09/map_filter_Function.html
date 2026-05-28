@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="newArr"></p>
+    <script>
+        // 배열
+        const arr = [1,2,3,4,5];
+
+        // 콜백 함수를 받는 함수
+        function map(callback) {
+            const newArr = [];
+            for(let i = 0; i < arr.length; i++) {
+                newArr.push(callback(arr[i]));
+            }
+            return newArr;
+        }
+
+        // map() 함수 사용
+        const newArray = map(function(item) {
+            return item * 2;
+        });
+
+        const arr = [1,2,3,10, 11, 16, 20, 22, 40];
+
+        // filter() 함수 사용 - 짝수만 출력
+        const even = arr.filter(( val, index)=> val % 2 == 0 );
+
+        // 결과 출력
+        document.getElementById("newArr").textContent = newArray;
+
+</script>
+
+</body>
+</html>
